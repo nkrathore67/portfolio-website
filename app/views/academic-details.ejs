@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Details - Neeraj Kumar Rathor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Main Navbar -->
+    <%- include('partials/navbar') %>
+
+    <!-- Include Secondary Navbar -->
+    <%- include('partials/secondary-navbar') %>
+
+    <!-- Academic Details Section -->
+    <div class="container">
+        <h1>Academic Details</h1>
+        <ul>
+            <% portfolioData.academicDetails.forEach(detail => { %>
+                <li><strong><%= detail.year %></strong>: <%= detail.degree %> from <%= detail.institute %> (Marks: <%= detail.marks %>)</li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

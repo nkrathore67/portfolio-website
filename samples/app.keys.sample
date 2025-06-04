@@ -1,0 +1,5 @@
+module.exports = {
+    SESSION_SECRET: 'your-session-secret-key',
+    API_KEY: 'your-api-key',
+    ANOTHER_SECRET: 'another-secret-key'
+};

@@ -1,0 +1,402 @@
+/* filepath: /Users/neeraj.rathor.j5m/per/portfolio/portfolio-website/public/styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* White background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark grey text */
+}
+
+.container {
+    max-width: 1200px; /* Full-width container for general pages */
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px; /* Add padding to avoid overlap with navbar */
+}
+
+/* Register Page Styles */
+.register-container {
+    max-width: 500px; /* Narrower container for the register page */
+    margin: 100px auto; /* Center the form and add spacing from the top */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark gray text */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555; /* Slightly darker gray */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff0000; /* Red border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5); /* Subtle red glow */
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.btn:hover {
+    background-color: #ff0000; /* Red background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #555; /* Slightly darker gray */
+}
+
+p a {
+    color: #ff0000; /* Red link */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark grey text */
+    padding: 10px 20px;
+        border-bottom: 1px solid #ddd; /* Light grey border */
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Keep buttons and profile picture in their positions */
+    align-items: center;
+    position: relative; /* Allow absolute positioning for the title */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333; /* Keep the original color */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the title horizontally */
+    cursor: pointer; /* Make it look clickable */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-title:hover {
+    transform: translateX(-50%) scale(1.1); /* Slight zoom effect on hover */
+}
+
+.navbar-buttons .btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #f8f9fa; /* Light grey button */
+    color: #333; /* Dark grey text */
+    text-decoration: none;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-buttons .btn:hover {
+    background-color: #e9ecef; /* Slightly darker grey on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Align the toggle button to the left */
+.toggle-btn {
+    float: right;
+    margin-right: 10px; /* Add spacing between the button and the text */
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #333; /* Dark gray */
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #333; /* Dark grey */
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+p {
+    text-align: center;
+    color: #666; /* Light grey text */
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light grey button */
+    color: #333; /* Dark grey text */
+    text-decoration: none;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e9ecef; /* Slightly darker grey on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Section Styles */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff; /* White background for sections */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+}
+
+.section h2 {
+    text-align: center;
+    color: #333; /* Dark grey */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ddd; /* Light grey underline */
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #555; /* Slightly darker grey for list items */
+}
+
+/* Portfolio Item Styles */
+.portfolio-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+}
+
+.portfolio-item h3 {
+    color: #333; /* Dark grey */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.portfolio-item p {
+    color: #666; /* Light grey text */
+    font-size: 1rem;
+}
+
+/* Profile Image Styles */
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoomed Profile Image Styles */
+.profile-image-zoomed {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); /* Center and zoom */
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Add a dark background */
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Add shadow for focus */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Footer Styles (Optional) */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff; /* White footer */
+    color: #333; /* Dark grey text */
+    border-top: 1px solid #ddd; /* Light grey border */
+    font-size: 0.9rem;
+}
+
+/* Certification Section Styles */
+
+/* Certifications Wrapper */
+.certifications-wrapper {
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%; /* Full width of the container */
+    position: relative;
+}
+
+/* Certifications Container */
+.certifications {
+    display: flex; /* Arrange items in a row */
+    gap: 20px; /* Add spacing between items */
+    animation: scroll-certifications 15s linear infinite; /* Smooth scrolling animation */
+}
+
+/* Certification Item */
+.certification-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    width: 200px; /* Fixed width for each certification */
+    height: auto;
+    text-align: center;
+}
+
+/* Certification Image */
+.certification-image {
+    width: 100%; /* Make the image fit the container */
+    height: auto;
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.certification-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Collapse section content by default */
+.section-content {
+    display: none; /* Hide all sections initially */
+}
+
+/* Keyframes for Scrolling Animation */
+@keyframes scroll-certifications {
+    0% {
+        transform: translateX(0); /* Start at the initial position */
+    }
+    100% {
+        transform: translateX(-50%); /* Move left by the full width of the container */
+    }
+}
+
+/* Secondary Navbar Styles */
+.secondary-navbar {
+    position: sticky;
+    top: 60px; /* Adjust based on the height of the main navbar */
+    background-color: #f8f9fa; /* Light grey background */
+    border-bottom: 1px solid #ddd; /* Light grey border */
+    z-index: 999;
+    padding: 0; /* Remove padding to match height */
+    height: 60px; /* Match the height of the main navbar */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+.secondary-navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the list spans the full width */
+}
+
+.secondary-navbar ul li {
+    margin: 0 15px;
+}
+
+.secondary-navbar ul li a {
+    text-decoration: none;
+    color: #333; /* Dark grey text */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.secondary-navbar ul li a:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+/* Certifications List */
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.certifications-list li {
+    margin-bottom: 10px;
+}
+
+.certifications-list li a {
+    text-decoration: none;
+    color: #007bff; /* Blue text */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.certifications-list li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

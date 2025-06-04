@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Neeraj Kumar Rathor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+    <!-- Include Secondary Navbar -->
+    <%- include('partials/secondary-navbar') %>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <h1>About Me</h1>
+        <p><strong>Name:</strong> <%= portfolioData.personalInfo.name %></p>
+        <p><strong>Email:</strong> <%= portfolioData.personalInfo.email %></p>
+        <p><strong>Phone:</strong> <%= portfolioData.personalInfo.phone.join(', ') %></p>
+        <p>
+            Hello! My name is <%= portfolioData.personalInfo.name %>. I am a passionate software engineer with experience in 
+            cloud-native applications, DevOps, and full-stack development. I enjoy solving complex problems and building 
+            scalable, efficient solutions. I have worked with global teams and contributed to projects that make a difference.
+        </p>
+        <p>
+            I hold an M.Tech in Computer Science & Engineering from IIT Hyderabad and a B.E. in Computer Science from MBM 
+            Engineering College, Jodhpur. My expertise spans across various technologies, including AWS, Docker, Kubernetes, 
+            and modern web development frameworks.
+        </p>
+        <p>
+            Outside of work, I enjoy exploring new technologies, contributing to open-source projects, and mentoring aspiring 
+            developers. Feel free to explore my portfolio to learn more about my academic background, work experience, projects, 
+            skills, and certifications.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Neeraj Kumar Rathor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+    <!-- Include Secondary Navbar -->
+    <%- include('partials/secondary-navbar') %>
+
+    <!-- Work Experience Section -->
+    <div class="container">
+        <h1>Work Experience</h1>
+        <% portfolioData.workExperience.forEach(job => { %>
+            <div class="portfolio-item">
+                <h3><%= job.title %> at <%= job.company %> (<%= job.duration %>)</h3>
+                <ul>
+                    <% job.responsibilities.forEach(task => { %>
+                        <li><%= task %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>
